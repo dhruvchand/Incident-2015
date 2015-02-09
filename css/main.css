@@ -72,7 +72,9 @@ margin-top:50px;
 }
 
 .hexnav li:hover {
-opacity:0.8;
+opacity:1;
+transform: scale(1.2,1.2) rotate(10deg);
+
 }
 
 
@@ -82,13 +84,14 @@ cursor:pointer;
 display:none;
 height:189px;
 list-style:none;
-opacity:.5;
+opacity:0.9;
 position:absolute;
 text-align:center;
 text-shadow:1px 1px 0 rgba(0,0,0,0.9);
 top:0;
 width:164px;
 margin:0;
+transition: ease-in-out all 0.3s;
 }
 
 .hexnav a {
@@ -104,7 +107,7 @@ padding:30px 0 0;
 }
 
 .hexnav .hexnav-item-center {
-background:transparent url(../img/hex-center.png) no-repeat 0 0;
+background:transparent url(../img/inci_main.png) no-repeat 0 0;
 height:188px;
 left:170px;
 opacity:1;
@@ -115,39 +118,45 @@ width:164px;
 }
 
 .hexnav .hexnav-item-1 {
+background:transparent url(../img/pronite.png) no-repeat 0 0;
 left:84px;
-opacity:.6;
+opacity:.8;
 top:0;
 }
 
 .hexnav .hexnav-item-2 {
+background:transparent url(../img/events.png) no-repeat 0 0;
 left:255px;
-opacity:.6;
+opacity:.8;
 }
 
 .hexnav .hexnav-item-3 {
+    background:transparent url(../img/informals.png) no-repeat 0 0;
 left:340px;
 top:146px;
-opacity:.6;
+opacity:.8;
 }
 
 .hexnav .hexnav-item-4 {
+    background:transparent url(../img/world.png) no-repeat 0 0;
 left:0;
 top:146px;
-opacity:.3;
+opacity:.8;
 }
 
 
 .hexnav .hexnav-item-5 {
+    background:transparent url(../img/beach.png) no-repeat 0 0;
 left:254px;
 top:293px;
-opacity:.6;
+opacity:.8;
 }
 
 .hexnav .hexnav-item-6 {
+    background:transparent url(../img/specials.png) no-repeat 0 0;
 left:84px;
 top:293px;
-opacity:.6;
+opacity:.8;
 }
 
 .hexnav .hexnav-item-protecting a {
