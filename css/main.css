@@ -6,46 +6,73 @@
     padding:0px;
     margin: 0px;
 }
-#header
-{
-	text-align:center;
-}
+
 
 html {
-    height:100%;
-    min-height: 100%;
+    height: 100%;
 }
 
 
 body {
-    min-height: 100%;
-    position:relative;
+    height: 100%;
+}
+
+#footer-1
+{
+    position: absolute;
+    bottom: 0px;
+     z-index: 3;
+    height:50px;
+	 width:100%;
+    background: rgba(0,0,0,0);
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 15%, rgba(0,0,0,1) 99%, rgba(0,0,0,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(15%, rgba(0,0,0,0.25)), color-stop(99%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1)));
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 15%, rgba(0,0,0,1) 99%, rgba(0,0,0,1) 100%);
+background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 15%, rgba(0,0,0,1) 99%, rgba(0,0,0,1) 100%);
+background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 15%, rgba(0,0,0,1) 99%, rgba(0,0,0,1) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 15%, rgba(0,0,0,1) 99%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
 }
 
 #header {
-    height: 65px;
+    z-index: 3;
     width:100%;
     top:0px;
     left:0px;
-    background: rgba(0,0,0,0.1);
-    position:absolute;
+    text-align:center;
+   background: rgba(0,0,0,0.76);
+background: -moz-linear-gradient(top, rgba(0,0,0,0.76) 0%, rgba(0,0,0,0) 69%, rgba(0,0,0,0) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.76)), color-stop(69%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0)));
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.76) 0%, rgba(0,0,0,0) 69%, rgba(0,0,0,0) 100%);
+background: -o-linear-gradient(top, rgba(0,0,0,0.76) 0%, rgba(0,0,0,0) 69%, rgba(0,0,0,0) 100%);
+background: -ms-linear-gradient(top, rgba(0,0,0,0.76) 0%, rgba(0,0,0,0) 69%, rgba(0,0,0,0) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,0.76) 0%, rgba(0,0,0,0) 69%, rgba(0,0,0,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+    padding-top:4px;
+    color:#EEE;
+    line-height: 25px;
+    font-family: 'Roboto', serif;
 }
-#footer {
-    height:65px;
-    position: static;
-	 width:100%;
+
+#background{
+    z-index: -1;
+    top:0px;
     left:0px;
-    background: rgba(0,0,0,0.1);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+      background-image:url(../img/bg.png);
+    background-size: cover;
 }
+
+
 #content {
+     z-index: 3;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
-	height:100%;
+    box-sizing: border-box;top:0; bottom:0; left:0; right:0;
     min-height: 100%;
-    padding: 70px 20px;
-	background-position:center;
-	background-size:cover;
+    position: relative;
 }
 
 .center
@@ -53,22 +80,25 @@ body {
 	text-align:center;
 }
 
-#content
+
+#main-wrapper
 {
-	color:#FFF;
-   background-image:url(../img/bg.png);
-    background-size: cover;
-    
+    height:550px;
 }
 
 .hexnav {
 display:block;
-height:482px;
+height:480px;
 position:relative;
 width:502px;
 z-index:15;
-margin:0 auto;
-margin-top:50px;
+
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    
 }
 
 .hexnav li:hover {
@@ -156,7 +186,7 @@ opacity:.8;
     background:transparent url(../img/specials.png) no-repeat 0 0;
 left:84px;
 top:293px;
-opacity:.8;
+opacity:.81;
 }
 
 .hexnav .hexnav-item-protecting a {
@@ -616,4 +646,20 @@ background-position:center -200px;
 
 .content-panel-step-relative,.ie7 .content-panel-step-moved-up,.ie7 .content-panel-step-moved-upper {
 position:relative;
+}
+
+.right-align
+{
+    text-align: right;
+}
+
+.social
+{
+    opacity:0.8;
+    transition: opacity ease-in-out 0.3s;
+    cursor: pointer;
+}
+.social:hover
+{
+    opacity:1;
 }
